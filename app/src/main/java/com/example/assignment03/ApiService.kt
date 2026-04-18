@@ -3,7 +3,7 @@
  * Assignment: Assignment 3 - Smart Utility App
  * Student Name: Darshilkumar Karkar
  * Student ID: A00203357
- * Date of Submission: 2026-04-17
+ * Date of Submission: 24/04/2026
  * Description: Simulates a remote API call using Kotlin coroutines and delay
  *              to mimic real network latency. Returns weather data or throws
  *              an exception to simulate network failure.

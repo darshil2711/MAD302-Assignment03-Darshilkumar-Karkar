@@ -3,7 +3,7 @@
  * Assignment: Assignment 3 - Smart Utility App
  * Student Name: Darshilkumar Karkar
  * Student ID: A00203357
- * Date of Submission: 2026-04-17
+ * Date of Submission: 24/04/2026
  * Description: Second screen of the app. Requests ACCESS_FINE_LOCATION permission
  *              at runtime and displays the device's GPS coordinates on grant.
  *              Handles permission denial gracefully with a user-friendly message.

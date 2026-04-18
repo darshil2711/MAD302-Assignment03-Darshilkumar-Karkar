@@ -3,7 +3,7 @@
  * Assignment: Assignment 3 - Smart Utility App
  * Student Name: Darshilkumar Karkar
  * Student ID: A00203357
- * Date of Submission: 2026-04-17
+ * Date of Submission: 24/04/2026
  * Description: Secure storage wrapper using AndroidX Security EncryptedSharedPreferences.
  *              Ensures sensitive data is never stored in plain text on the device.
  */
