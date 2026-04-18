@@ -1,9 +1,9 @@
 /*
  * Course: MAD302-01 Android Development
  * Assignment: Assignment 3 - Smart Utility App
- * Student Name: YOUR FULL NAME
- * Student ID: YOUR STUDENT ID
- * Date of Submission: 2026-04-17
+ * Student Name: Darshilkumar Karkar
+ * Student ID: A00203357
+ * Date of Submission: 24/04/2026
  * Description: First screen of the app. Displays a list of weather data fetched
  *              asynchronously using coroutines. Shows a loading spinner during fetch
  *              and error messages on failure. Navigates to LocationFragment.
