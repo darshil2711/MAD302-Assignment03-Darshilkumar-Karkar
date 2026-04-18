@@ -1,8 +1,8 @@
 /*
  * Course: MAD302-01 Android Development
  * Assignment: Assignment 3 - Smart Utility App
- * Student Name: YOUR FULL NAME
- * Student ID: YOUR STUDENT ID
+ * Student Name: Darshilkumar Karkar
+ * Student ID: A00203357
  * Date of Submission: 2026-04-17
  * Description: Second screen of the app. Requests ACCESS_FINE_LOCATION permission
  *              at runtime and displays the device's GPS coordinates on grant.

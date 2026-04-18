@@ -2,8 +2,8 @@
 
 **Course:** MAD302-01 Android Development  
 **Assignment:** Assignment 3  
-**Student Name:** YOUR FULL NAME  
-**Student ID:** YOUR STUDENT ID  
+**Student Name:** Darshilkumar Karkar
+**Student ID:** A00203357
 
 ## Description
 
