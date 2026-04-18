@@ -86,6 +86,26 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_home_to_location)
         }
 
+        // Search button with input validation
+        binding.btnSearch.setOnClickListener {
+            val rawInput = binding.etCitySearch.text.toString()
+            when (val result = InputValidator.validateCityName(rawInput)) {
+                is InputValidator.ValidationResult.Success -> {
+                    // Input is safe — use sanitized value
+                    binding.tilCitySearch.error = null
+                    android.widget.Toast.makeText(
+                        requireContext(),
+                        "Searching for: ${result.sanitizedValue}",
+                        android.widget.Toast.LENGTH_SHORT
+                    ).show()
+                }
+                is InputValidator.ValidationResult.Error -> {
+                    // Show validation error inline — never crash or show raw exceptions
+                    binding.tilCitySearch.error = result.message
+                }
+            }
+        }
+
         // Load data on first launch
         viewModel.loadWeatherData()
     }
