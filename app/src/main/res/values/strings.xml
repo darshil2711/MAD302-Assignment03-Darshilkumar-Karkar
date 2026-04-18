@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smart Utility App</string>
+    <string name="home_fragment_title">Home Fragment</string>
+    <string name="go_to_location_details">Go to Location Details</string>
+    <string name="location_details_title">Location Details</string>
+    <string name="coordinates_placeholder">Coordinates will appear here</string>
+</resources>
