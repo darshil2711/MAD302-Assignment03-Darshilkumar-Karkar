@@ -91,8 +91,10 @@ class HomeFragment : Fragment() {
             val rawInput = binding.etCitySearch.text.toString()
             when (val result = InputValidator.validateCityName(rawInput)) {
                 is InputValidator.ValidationResult.Success -> {
-                    // Input is safe — use sanitized value
                     binding.tilCitySearch.error = null
+                    // Save last search securely — never in plain SharedPreferences
+                    val securePrefs = SecurePreferences(requireContext())
+                    securePrefs.saveString(SecurePreferences.KEY_LAST_SEARCH, result.sanitizedValue)
                     android.widget.Toast.makeText(
                         requireContext(),
                         "Searching for: ${result.sanitizedValue}",
@@ -104,6 +106,13 @@ class HomeFragment : Fragment() {
                     binding.tilCitySearch.error = result.message
                 }
             }
+        }
+
+        // Restore last searched city from secure storage
+        val securePrefs = SecurePreferences(requireContext())
+        val lastSearch = securePrefs.getString(SecurePreferences.KEY_LAST_SEARCH)
+        if (lastSearch.isNotEmpty()) {
+            binding.etCitySearch.setText(lastSearch)
         }
 
         // Load data on first launch
